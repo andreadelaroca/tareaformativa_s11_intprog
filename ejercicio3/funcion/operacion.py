@@ -1,7 +1,11 @@
 import math
 
-def suma_numero_exponente (num, exp):
+def potencia_numero_exponente (num, exp):
     if num < 0 or exp < 0:
         print("Los valores deben ser enteros positivos.")
         return None
-    resultado = math.pow(num, exp)
+    potencia = math.pow(num, exp)
+    print(f"\n{num}^{exp} = {potencia}")
+    suma = sum(int(digit) for digit in str(int(potencia)))
+    print(f"La suma de los dígitos de {int(potencia)} es {suma}")
+    return suma
