@@ -2,4 +2,6 @@ import funcion.operacion as op
 
 n = int(input("Ingrese un número entero positivo para convertir a binario: "))
 
-op.decimal_binario(n)
+binario = op.decimal_binario(n)
+
+print(f"\nEl decimal {n} en binario es {binario}")
