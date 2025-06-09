@@ -4,7 +4,7 @@ def decimal_binario(num):
         return None
     while num > 0:
         binario = num % 2
-        num = num // 2
+        
     print(f"\nEl número en binario es {binario}")
     return binario
 
